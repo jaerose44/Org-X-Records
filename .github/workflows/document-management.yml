@@ -23,7 +23,7 @@ jobs:
 
       - name: Encrypt sensitive files
         run: |
-          openssl aes-256-cbc -in sensitive_document.txt -out sensitive_document.txt.enc -k 
+          openssl aes-256-cbc -in sensitive_document.txt -out sensitive_document.txt.enc -k
 
       - name: Push encrypted files to the repository
         run: |
