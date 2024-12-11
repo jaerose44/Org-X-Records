@@ -18,11 +18,15 @@ jobs:
 
       - name: Run Document Linter
         run: |
+          # Example of document linting to ensure consistent formatting
+          # You could use a Python linter or markdown linter for document checks
           pip install markdownlint-cli
           markdownlint **/*.md
 
       - name: Encrypt sensitive files
         run: |
+          # Example to encrypt any file with sensitive data before committing to the repo
+          # Make sure to install encryption tool such as OpenSSL or GPG
           openssl aes-256-cbc -in sensitive_document.txt -out sensitive_document.txt.enc -k
 
       - name: Push encrypted files to the repository
