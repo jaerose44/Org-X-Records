@@ -396,3 +396,17 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+# Ignore all text editor/IDE-related files
+*.swp
+.idea/
+.vscode/
+
+# Ignore sensitive files (e.g., API keys, passwords, private docs)
+*.env
+secrets.txt
+*.pem
+*.key
+
+# Ignore system files
+.DS_Store
+Thumbs.db
